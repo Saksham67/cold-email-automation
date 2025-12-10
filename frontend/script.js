@@ -29,7 +29,7 @@ document
     );
 
     try {
-      const response = await fetch("http://localhost:5000/send-emails", {
+      const response = await fetch("https://cold-email-automation-4tg6.onrender.com/send-emails", {
         method: "POST",
         body: formData,
       });
