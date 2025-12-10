@@ -53,6 +53,7 @@ cold-email-automation/
 ## 🚀 How To Run This Project
 
 ### Clone the repo
-git clone https://github.com/Saksham67/cold-email-automation.git
-cd cold-email-automation
+
+- git clone https://github.com/Saksham67/cold-email-automation.git
+- cd cold-email-automation
 
