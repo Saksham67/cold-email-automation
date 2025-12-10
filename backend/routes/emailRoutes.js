@@ -13,17 +13,14 @@ const __dirname = path.dirname(__filename);
 // Multer storage config
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    if (file.fieldname === "csvFile")
-      cb(null, path.join(__dirname, "..", "uploads", "csv"));
-    else if (file.fieldname === "resumeFile")
-      cb(null, path.join(__dirname, "..", "uploads", "resumes"));
-    else cb(null, path.join(__dirname, "..", "uploads"));
+    cb(null, "/tmp");   // ✅ Render-safe temp folder
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
     cb(null, uniqueSuffix + "-" + file.originalname);
   },
 });
+
 
 const upload = multer({ storage });
 
