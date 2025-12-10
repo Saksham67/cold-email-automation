@@ -63,7 +63,7 @@ CSV Parser (for reading CSV files)
 
 🚀 How To Run This Project Locally
 Step 1: Clone the Repository
-git clone https://github.com/your-username/cold-email-automation.git
+git clone https://github.com/Saksham67/cold-email-automation.git
 cd cold-email-automation
 
 Step 2: Install Backend Dependencies
